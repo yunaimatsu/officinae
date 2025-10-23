@@ -1,2 +1,3 @@
 HYPRLAND_CONFIG.conf:$HOME/.config/hypr/hyprland.conf
 HYPRPAPER.conf:$HOME/.config/hypr/hyprpapaer.conf
+FOOT.ini:$HOME/.config/foot/foot.ini
