@@ -3,12 +3,9 @@
     "position": "top",
     "height": 30,
     "spacing": 4,
-
     "modules-left": [
-        "pulseaudio",
-        "bluetooth",
-        "network",
-        "backlight"
+        "group/audio-brightness",
+        "group/network-bluetooth"
     ],
 
     "modules-center": [
@@ -22,22 +19,27 @@
         "battery"
     ],
 
+    "group/audio-brightness": {
+        "orientation": "vertical",
+        "modules": [
+            "pulseaudio",
+            "backlight"
+        ]
+    },
+
     "pulseaudio": {
         "format": "AUDIO: {volume} percent",
         "format-muted": "AUDIO: MUTED",
         "on-click": "pavucontrol"
     },
 
-    "bluetooth": {
-        "format": "BLUETOOTH: {status}",
-        "format-disabled": "BLUETOOTH: DISCONNECTED",
-        "format-off": "BLUETOOTH: DISCONNECTED",
-        "format-connected": "BLUETOOTH: {device_alias}",
-        "format-connected-battery": "BLUETOOTH: {device_alias}",
-        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+
+    "group/network-bluetooth": {
+        "orientation": "vertical",
+        "modules": [
+            "network",
+            "bluetooth"
+        ]
     },
 
     "network": {
@@ -48,6 +50,17 @@
         "tooltip-format-wifi": "{essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "{ifname}",
         "tooltip-format-disconnected": "Disconnected"
+    },
+    "bluetooth": {
+        "format": "BLUETOOTH: {status}",
+        "format-disabled": "BLUETOOTH: DISCONNECTED",
+        "format-off": "BLUETOOTH: DISCONNECTED",
+        "format-connected": "BLUETOOTH: {device_alias}",
+        "format-connected-battery": "BLUETOOTH: {device_alias}",
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
     },
 
     "backlight": {
