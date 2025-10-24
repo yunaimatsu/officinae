@@ -3,6 +3,7 @@
     "position": "top",
     "height": 30,
     "spacing": 4,
+
     "modules-left": [
         "group/audio-brightness",
         "group/network-bluetooth"
@@ -11,11 +12,10 @@
         "clock"
     ],
     "modules-right": [
-        "cpu",
-        "memory",
-        "disk",
+        "group/cpu-mm-str",
         "battery"
     ],
+
     "group/audio-brightness": {
         "orientation": "vertical",
         "modules": [
@@ -23,11 +23,16 @@
             "backlight"
         ]
     },
+
     "pulseaudio": {
         "format": "AUDIO: {volume} percent",
         "format-muted": "AUDIO: MUTED",
         "on-click": "pavucontrol"
     },
+    "backlight": {
+        "format": "BRIGHT: {percent} percent"
+    },
+
     "group/network-bluetooth": {
         "orientation": "vertical",
         "modules": [
@@ -55,24 +60,31 @@
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
     },
-    "backlight": {
-        "format": "BRIGHTNESS: {percent} percent"
-    },
+
     "clock": {
         "format": "{:%Y-%m-%d (%a) %H:%M:%S}",
         "interval": 1
     },
+
+    "group/cpu-mm-str": {
+        "orientation": "vertical",
+        "modules": [
+            "cpu",
+            "memory",
+            "disk"
+        ]
+    },
     "cpu": {
-        "format": "CPU_USAGE: {usage} percent",
+        "format": "CPU: {usage} percent",
         "interval": 2
     },
     "memory": {
-        "format": "MM_USAGE: {percentage} percent",
+        "format": "MM: {percentage} percent",
         "interval": 2
     },
 
     "disk": {
-        "format": "STORAGE_USAGE: {percentage_used} percent",
+        "format": "STR: {percentage_used} percent",
         "path": "/"
     },
 
