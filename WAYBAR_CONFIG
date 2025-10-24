@@ -31,9 +31,9 @@
         "format": "BRIGHT {percent}"
     },
     "network": {
-        "format-wifi": "NETWORK: {essid} {signalStrength}",
-        "format-ethernet": "NETWORK: Ethernet {ifname}",
-        "format-disconnected": "NETWORK: DISCONNECTED",
+        "format-wifi": "NW {essid} {signalStrength}",
+        "format-ethernet": "NW Ethernet {ifname}",
+        "format-disconnected": "NW DISCONNECTED",
         "tooltip-format": "{ifname} via {gwaddr}",
         "tooltip-format-wifi": "{essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "{ifname}",
@@ -53,7 +53,7 @@
 
     // Center: components
     "clock": {
-        "format": "{:%Y-%m-%d (%a) %H:%M:%S}",
+        "format": "{:%Y-%m-%d %a %H:%M:%S}",
         "interval": 1
     },
 
