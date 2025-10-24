@@ -1,8 +1,8 @@
 * {
     border: none;
-    border-radius: 0;
+    border-radius: 5px;
     font-family: monospace;
-    font-size: 13px;
+    font-size: 9px;
     min-height: 0;
 }
 
@@ -21,7 +21,7 @@ window#waybar {
 #disk,
 #battery {
     padding: 0 10px;
-    margin: 0 2px;
+    margin: 0 0px;
 }
 
 #pulseaudio {

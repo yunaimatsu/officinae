@@ -4,95 +4,79 @@
     "height": 30,
     "spacing": 4,
 
+    // Module
     "modules-left": [
-        "group/audio-brightness",
-        "group/network-bluetooth"
+        "pulseaudio",
+        "backlight",
+        "network",
+        "bluetooth"
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
-        "group/cpu-mm-str",
+        "cpu",
+        "memory",
+        "disk",
         "battery"
     ],
 
-    "group/audio-brightness": {
-        "orientation": "vertical",
-        "modules": [
-            "pulseaudio",
-            "backlight"
-        ]
-    },
-
+    // Left: components
     "pulseaudio": {
-        "format": "AUDIO: {volume} percent",
-        "format-muted": "AUDIO: MUTED",
+        "format": "AUDIO {volume}",
+        "format-muted": "MUTED",
         "on-click": "pavucontrol"
     },
     "backlight": {
-        "format": "BRIGHT: {percent} percent"
-    },
-
-    "group/network-bluetooth": {
-        "orientation": "vertical",
-        "modules": [
-            "network",
-            "bluetooth"
-        ]
+        "format": "BRIGHT {percent}"
     },
     "network": {
-        "format-wifi": "NETWORK: {essid} {signalStrength} percent",
+        "format-wifi": "NETWORK: {essid} {signalStrength}",
         "format-ethernet": "NETWORK: Ethernet {ifname}",
         "format-disconnected": "NETWORK: DISCONNECTED",
         "tooltip-format": "{ifname} via {gwaddr}",
         "tooltip-format-wifi": "{essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "{ifname}",
-        "tooltip-format-disconnected": "Disconnected"
+        "tooltip-format-disconnected": "NO NW"
     },
     "bluetooth": {
-        "format": "BLUETOOTH: {status}",
-        "format-disabled": "BLUETOOTH: DISCONNECTED",
-        "format-off": "BLUETOOTH: DISCONNECTED",
-        "format-connected": "BLUETOOTH: {device_alias}",
-        "format-connected-battery": "BLUETOOTH: {device_alias}",
+        "format": "BT {status}",
+        "format-disabled": "BT DIABLED",
+        "format-off": "BT DISCONNECTED",
+        "format-connected": "BT {device_alias}",
+        "format-connected-battery": "BT {device_alias}",
         "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
     },
 
+    // Center: components
     "clock": {
         "format": "{:%Y-%m-%d (%a) %H:%M:%S}",
         "interval": 1
     },
 
-    "group/cpu-mm-str": {
-        "orientation": "vertical",
-        "modules": [
-            "cpu",
-            "memory",
-            "disk"
-        ]
-    },
+    // Right: components
     "cpu": {
-        "format": "CPU: {usage} percent",
+        "format": "CPU {usage}",
         "interval": 2
     },
     "memory": {
-        "format": "MM: {percentage} percent",
+        "format": "MM {percentage}",
         "interval": 2
     },
 
     "disk": {
-        "format": "STR: {percentage_used} percent",
+        "format": "STR {percentage_used}",
         "path": "/"
     },
-
     "battery": {
-        "format": "BATTERY: {status} {capacity} percent",
-        "format-charging": "BATTERY: CHARGING {capacity} percent",
-        "format-plugged": "BATTERY: CHARGED {capacity} percent",
-        "format-full": "BATTERY: CHARGED {capacity} percent",
+        "bat": "BAT0",
+        "format": "BAT {status} {capacity}",
+        "format-charging": "BATTERY CHARGING {capacity}",
+        "format-plugged": "BATTERY CHARGED {capacity}",
+        "format-full": "BATTERY CHARGED {capacity}",
         "states": {
             "warning": 30,
             "critical": 15
