@@ -73,7 +73,7 @@
     },
     "battery": {
         "bat": "BAT0",
-        "format": "BAT {status} {capacity}",
+        "format": "BAT {capacity}",
         "format-charging": "BATTERY CHARGING {capacity}",
         "format-plugged": "BATTERY CHARGED {capacity}",
         "format-full": "BATTERY CHARGED {capacity}",
