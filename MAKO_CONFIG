@@ -1,0 +1,41 @@
+# Font
+font=JetBrainsMono Nerd Font 10
+
+# Appearance
+background-color=#1e1e2ecc
+text-color=#f8f8f2ff
+border-color=#89b4faff
+border-size=2
+border-radius=10
+padding=16
+margin=20
+
+# Notification lifespan
+default-timeout=5000
+
+# Layout
+max-visible=5
+anchor=top-right
+width=400
+
+# Layer
+layer=overlay
+
+# Icons (optional if you use them)
+icons=1
+icon-path=/usr/share/icons
+
+# Hide on mouse hover (nice UX)
+
+# Critical urgency style
+[urgency=critical]
+border-color=#f38ba8ff
+background-color=#1e1e2eff
+text-color=#f8f8f2ff
+default-timeout=0
+
+# Low urgency style (optional)
+[urgency=low]
+background-color=#1e1e2eaa
+text-color=#a6adc8ff
+border-color=#585b70ff
