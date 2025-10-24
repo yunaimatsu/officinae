@@ -2,4 +2,4 @@ HYPRLAND_CONFIG.conf:$HOME/.config/hypr/hyprland.conf
 HYPRPAPER.conf:$HOME/.config/hypr/hyprpapaer.conf
 FOOT.ini:$HOME/.config/foot/foot.ini
 WAYBAR_CONFIG:$HOME/.config/waybar/config
-WAYBAR_STYLES.css:$HOME/.config/waybar/styles.css
+WAYBAR_STYLE.css:$HOME/.config/waybar/style.css

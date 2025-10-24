@@ -11,6 +11,18 @@ window#waybar {
     color: #ffffff;
 }
 
+.modules-left {
+    text-align: left;
+}
+
+.modules-center {
+    text-align: center;
+}
+
+.modules-right {
+    text-align: right;
+}
+
 #pulseaudio,
 #bluetooth,
 #network,

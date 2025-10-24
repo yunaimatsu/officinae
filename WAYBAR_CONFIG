@@ -7,18 +7,15 @@
         "group/audio-brightness",
         "group/network-bluetooth"
     ],
-
     "modules-center": [
         "clock"
     ],
-
     "modules-right": [
         "cpu",
         "memory",
         "disk",
         "battery"
     ],
-
     "group/audio-brightness": {
         "orientation": "vertical",
         "modules": [
@@ -26,14 +23,11 @@
             "backlight"
         ]
     },
-
     "pulseaudio": {
         "format": "AUDIO: {volume} percent",
         "format-muted": "AUDIO: MUTED",
         "on-click": "pavucontrol"
     },
-
-
     "group/network-bluetooth": {
         "orientation": "vertical",
         "modules": [
@@ -41,7 +35,6 @@
             "bluetooth"
         ]
     },
-
     "network": {
         "format-wifi": "NETWORK: {essid} {signalStrength} percent",
         "format-ethernet": "NETWORK: Ethernet {ifname}",
@@ -62,21 +55,17 @@
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
     },
-
     "backlight": {
         "format": "BRIGHTNESS: {percent} percent"
     },
-
     "clock": {
         "format": "{:%Y-%m-%d (%a) %H:%M:%S}",
         "interval": 1
     },
-
     "cpu": {
         "format": "CPU_USAGE: {usage} percent",
         "interval": 2
     },
-
     "memory": {
         "format": "MM_USAGE: {percentage} percent",
         "interval": 2
