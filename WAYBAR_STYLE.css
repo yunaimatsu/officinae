@@ -1,65 +1,62 @@
 * {
     border: none;
-    border-radius: 5px;
     font-family: monospace;
+    border-radius: 10px 10px 10px 10px;
     font-size: 9px;
     min-height: 0;
 }
 
 window#waybar {
-    background-color: #1a1a1a;
+    background-color: transparent;
     color: #ffffff;
-    opacity: 0.9;
+}
+
+/* left */
+#pulseaudio,
+#backlight,
+#network,
+#bluetooth {
+    margin-left: 5px;
+}
+
+/* right */
+#cpu,
+#memory,
+#disk,
+#battery {
+  margin-right: 5px;
+}
+
+/* common */
+#pulseaudio,
+#backlight,
+#bluetooth,
+#network,
+#clock,
+#cpu,
+#memory,
+#disk,
+#battery {
+    padding: 5px 10px 5px 10px;
+    opacity: 0.8;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #pulseaudio,
 #bluetooth,
 #network,
 #backlight,
-#clock,
 #cpu,
 #memory,
 #disk,
 #battery {
-    padding: 0 10px;
-    margin: 0 0px;
-}
-
-#pulseaudio {
-    background-color: #2a2a2a;
-}
-
-#bluetooth {
-    background-color: #2a2a2a;
-}
-
-#network {
-    background-color: #2a2a2a;
-}
-
-#backlight {
     background-color: #2a2a2a;
 }
 
 #clock {
     background-color: #2a2a2a;
     font-weight: bold;
-}
-
-#cpu {
-    background-color: #2a2a2a;
-}
-
-#memory {
-    background-color: #2a2a2a;
-}
-
-#disk {
-    background-color: #2a2a2a;
-}
-
-#battery {
-    background-color: #2a2a2a;
 }
 
 #battery.charging {
