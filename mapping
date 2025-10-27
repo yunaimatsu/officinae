@@ -3,3 +3,4 @@ HYPRPAPER.conf:$HOME/.config/hypr/hyprpapaer.conf
 FOOT.ini:$HOME/.config/foot/foot.ini
 WAYBAR_CONFIG:$HOME/.config/waybar/config
 WAYBAR_STYLE.css:$HOME/.config/waybar/style.css
+KEYD_DEFAULT.conf:/etc/keyd/default.conf
