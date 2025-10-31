@@ -1,0 +1,98 @@
+{
+  "version": 5,
+  "lastUserContextId": 10,
+  "identities": [
+    {
+      "userContextId": 1,
+      "public": true,
+      "icon": "fingerprint",
+      "color": "blue",
+      "l10nId": "user-context-personal",
+      "name": "Personal",
+      "accessKey": "P"
+    },
+    {
+      "userContextId": 2,
+      "public": true,
+      "icon": "briefcase",
+      "color": "orange",
+      "l10nId": "user-context-work",
+      "name": "Work",
+      "accessKey": "W"
+    },
+    {
+      "userContextId": 3,
+      "public": true,
+      "icon": "dollar",
+      "color": "green",
+      "l10nId": "user-context-banking",
+      "name": "Banking",
+      "accessKey": "B"
+    },
+    {
+      "userContextId": 4,
+      "public": true,
+      "icon": "cart",
+      "color": "pink",
+      "l10nId": "user-context-shopping",
+      "name": "Shopping",
+      "accessKey": "S"
+    },
+    {
+      "userContextId": 5,
+      "public": false,
+      "icon": "",
+      "color": "",
+      "name": "userContextIdInternal.thumbnail",
+      "accessKey": ""
+    },
+    {
+      "userContextId": 6,
+      "public": true,
+      "icon": "fence",
+      "color": "purple",
+      "name": "Development",
+      "accessKey": "D"
+    },
+    {
+      "userContextId": 7,
+      "public": true,
+      "icon": "chill",
+      "color": "turquoise",
+      "name": "Social Media",
+      "accessKey": "M"
+    },
+    {
+      "userContextId": 8,
+      "public": true,
+      "icon": "gift",
+      "color": "red",
+      "name": "Gaming",
+      "accessKey": "G"
+    },
+    {
+      "userContextId": 9,
+      "public": true,
+      "icon": "tree",
+      "color": "yellow",
+      "name": "Research",
+      "accessKey": "R"
+    },
+    {
+      "userContextId": 10,
+      "public": true,
+      "icon": "fruit",
+      "color": "toolbar",
+      "name": "Temporary",
+      "accessKey": "T"
+    },
+    {
+      "userContextId": 4294967295,
+      "public": false,
+      "icon": "",
+      "color": "",
+      "name": "userContextIdInternal.webextStorageLocal",
+      "accessKey": ""
+    }
+  ]
+}

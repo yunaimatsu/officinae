@@ -1,0 +1,91 @@
+{
+  "policies": {
+    "DisableTelemetry": true,
+    "DisablePocket": true,
+    "DisableFirefoxStudies": true,
+    "DisableFirefoxAccounts": false,
+    "DontCheckDefaultBrowser": true,
+    "DisplayBookmarksToolbar": "newtab",
+    "NoDefaultBookmarks": false,
+    "OfferToSaveLogins": true,
+    "PasswordManagerEnabled": true,
+    "FirefoxHome": {
+      "Search": true,
+      "TopSites": false,
+      "SponsoredTopSites": false,
+      "Highlights": false,
+      "Pocket": false,
+      "SponsoredPocket": false,
+      "Snippets": false
+    },
+    "SearchSuggestEnabled": false,
+    "UserMessaging": {
+      "WhatsNew": false,
+      "ExtensionRecommendations": false,
+      "FeatureRecommendations": false,
+      "UrlbarInterventions": false,
+      "SkipOnboarding": true,
+      "MoreFromMozilla": false
+    },
+    "Permissions": {
+      "Camera": {
+        "BlockNewRequests": false,
+        "Locked": false
+      },
+      "Microphone": {
+        "BlockNewRequests": false,
+        "Locked": false
+      },
+      "Location": {
+        "BlockNewRequests": true,
+        "Locked": false
+      },
+      "Notifications": {
+        "BlockNewRequests": false,
+        "Locked": false
+      },
+      "Autoplay": {
+        "Default": "block-audio-video",
+        "Locked": false
+      }
+    },
+    "Preferences": {
+      "browser.cache.disk.parent_directory": {
+        "Value": "/tmp/firefox-cache",
+        "Status": "default"
+      },
+      "extensions.pocket.enabled": {
+        "Value": false,
+        "Status": "locked"
+      },
+      "privacy.donottrackheader.enabled": {
+        "Value": true,
+        "Status": "default"
+      },
+      "privacy.trackingprotection.enabled": {
+        "Value": true,
+        "Status": "locked"
+      },
+      "browser.safebrowsing.malware.enabled": {
+        "Value": true,
+        "Status": "default"
+      },
+      "browser.safebrowsing.phishing.enabled": {
+        "Value": true,
+        "Status": "default"
+      }
+    },
+    "SanitizeOnShutdown": false,
+    "DNSOverHTTPS": {
+      "Enabled": true,
+      "ProviderURL": "https://dns.cloudflare.com/dns-query",
+      "Locked": false
+    },
+    "EnableTrackingProtection": {
+      "Value": true,
+      "Locked": false,
+      "Cryptomining": true,
+      "Fingerprinting": true
+    }
+  }
+}

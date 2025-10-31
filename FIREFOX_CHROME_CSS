@@ -1,0 +1,265 @@
+/* Firefox userChrome.css - UI Customization */
+/* Location: ~/.mozilla/firefox/PROFILE.default-release/chrome/userChrome.css */
+
+/* ========================================
+   REQUIREMENTS:
+   Set in about:config:
+   toolkit.legacyUserProfileCustomizations.stylesheets = true
+   ======================================== */
+
+/* ========================================
+   1. COMPACT UI
+   ======================================== */
+
+:root {
+  --tab-min-height: 32px !important;
+  --tab-min-width: 80px !important;
+  --toolbarbutton-inner-padding: 8px !important;
+  --toolbar-start-end-padding: 4px !important;
+}
+
+/* Reduce tab height */
+#tabbrowser-tabs {
+  --tab-min-height: 32px !important;
+}
+
+/* Compact URL bar */
+#urlbar-container {
+  max-height: 32px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+#urlbar {
+  min-height: 28px !important;
+  font-size: 13px !important;
+}
+
+/* ========================================
+   2. HIDE UI ELEMENTS
+   ======================================== */
+
+/* Hide tab close button unless hovering */
+.tabbrowser-tab:not([pinned]):not(:hover) .tab-close-button {
+  display: none !important;
+}
+
+/* Hide "List all tabs" button */
+#alltabs-button {
+  display: none !important;
+}
+
+/* Hide forward button when disabled */
+#forward-button[disabled="true"] {
+  display: none !important;
+}
+
+/* Hide Firefox View button */
+#firefox-view-button {
+  display: none !important;
+}
+
+/* Hide Pocket button */
+#pocket-button {
+  display: none !important;
+}
+
+/* Hide "What's New" button */
+#whats-new-menu-button {
+  display: none !important;
+}
+
+/* ========================================
+   3. SIDEBAR CUSTOMIZATION
+   ======================================== */
+
+/* Hide sidebar header */
+#sidebar-header {
+  display: none !important;
+}
+
+/* Sidebar width */
+#sidebar-box {
+  min-width: 250px !important;
+  max-width: 400px !important;
+}
+
+/* Tree Style Tab integration */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  display: none !important;
+}
+
+/* ========================================
+   4. TAB STYLING
+   ======================================== */
+
+/* Square tabs */
+.tab-background {
+  border-radius: 0 !important;
+}
+
+/* Tab separator */
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+  border-left: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Active tab indicator */
+.tab-background[selected="true"] {
+  border-bottom: 2px solid #0a84ff !important;
+}
+
+/* Container tab colors (more visible) */
+.tabbrowser-tab[usercontextid] .tab-background {
+  border-top: 2px solid var(--identity-tab-color) !important;
+}
+
+/* ========================================
+   5. URL BAR STYLING
+   ======================================== */
+
+/* Always show full URL */
+#urlbar:not([focused]) #urlbar-input {
+  text-align: left !important;
+}
+
+/* URL bar background when focused */
+#urlbar[focused="true"] {
+  border-color: #0a84ff !important;
+  box-shadow: 0 0 0 1px #0a84ff, 0 0 0 4px rgba(10, 132, 255, 0.3) !important;
+}
+
+/* Reduce URL bar dropdown width */
+#urlbar-results {
+  max-width: 800px !important;
+}
+
+/* ========================================
+   6. BOOKMARKS TOOLBAR
+   ======================================== */
+
+/* Compact bookmarks toolbar */
+#PersonalToolbar {
+  min-height: 28px !important;
+  max-height: 28px !important;
+  margin-top: 0 !important;
+  padding: 2px 4px !important;
+}
+
+.bookmark-item {
+  padding: 2px 6px !important;
+  font-size: 12px !important;
+}
+
+/* Hide bookmark folder arrows */
+.bookmark-item[container] > .toolbarbutton-menu-dropmarker {
+  display: none !important;
+}
+
+/* ========================================
+   7. FINDBAR
+   ======================================== */
+
+/* Findbar at top */
+findbar {
+  order: -1 !important;
+  border-top: 1px solid var(--chrome-content-separator-color) !important;
+}
+
+/* ========================================
+   8. CONTEXT MENU
+   ======================================== */
+
+/* Compact context menu */
+menupopup > menuitem,
+menupopup > menu {
+  padding-block: 4px !important;
+  min-height: 24px !important;
+}
+
+/* ========================================
+   9. DEVELOPER TOOLS
+   ======================================== */
+
+/* DevTools compact mode */
+#developer-toolbar {
+  padding: 2px !important;
+}
+
+/* ========================================
+   10. CUSTOM COLORS (DARK MODE)
+   ======================================== */
+
+/* Uncomment for custom dark theme */
+/*
+:root {
+  --toolbar-bgcolor: #2b2a33 !important;
+  --toolbar-color: #fbfbfe !important;
+  --tab-selected-bgcolor: #42414d !important;
+  --lwt-sidebar-background-color: #38383d !important;
+  --lwt-sidebar-text-color: #fbfbfe !important;
+}
+
+#navigator-toolbox {
+  background-color: var(--toolbar-bgcolor) !important;
+}
+
+.tab-background[selected="true"] {
+  background-color: var(--tab-selected-bgcolor) !important;
+}
+
+#sidebar-box {
+  background-color: var(--lwt-sidebar-background-color) !important;
+  color: var(--lwt-sidebar-text-color) !important;
+}
+*/
+
+/* ========================================
+   11. HIDE TAB BAR (for Tree Style Tab)
+   ======================================== */
+
+/* Uncomment to hide native tab bar when using Tree Style Tab */
+/*
+#TabsToolbar {
+  visibility: collapse !important;
+}
+
+#sidebar-header {
+  display: none !important;
+}
+*/
+
+/* ========================================
+   12. RESPONSIVE DESIGN MODE
+   ======================================== */
+
+/* Better responsive design mode toolbar */
+.browserContainer > findbar {
+  order: -1 !important;
+}
+
+/* ========================================
+   13. MISC TWEAKS
+   ======================================== */
+
+/* Remove "View site information" button padding */
+#identity-box {
+  padding-inline: 4px !important;
+}
+
+/* Compact toolbar buttons */
+.toolbarbutton-1 {
+  padding: 4px !important;
+}
+
+/* Remove gaps in toolbar */
+#nav-bar {
+  gap: 0 !important;
+}
+
+/* Smooth animations */
+.tabbrowser-tab,
+.tab-background,
+#urlbar {
+  transition: all 0.2s ease-in-out !important;
+}

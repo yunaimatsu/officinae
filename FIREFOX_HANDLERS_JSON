@@ -1,0 +1,119 @@
+{
+  "defaultHandlersVersion": {},
+  "mimeTypes": {
+    "application/pdf": {
+      "action": 3,
+      "extensions": ["pdf"]
+    },
+    "image/webp": {
+      "action": 3,
+      "extensions": ["webp"]
+    },
+    "image/avif": {
+      "action": 3,
+      "extensions": ["avif"]
+    },
+    "image/svg+xml": {
+      "action": 3,
+      "extensions": ["svg"]
+    },
+    "video/mp4": {
+      "action": 4,
+      "handlers": [
+        {
+          "name": "mpv",
+          "path": "/usr/bin/mpv"
+        }
+      ]
+    },
+    "video/webm": {
+      "action": 4,
+      "handlers": [
+        {
+          "name": "mpv",
+          "path": "/usr/bin/mpv"
+        }
+      ]
+    },
+    "audio/mpeg": {
+      "action": 4,
+      "handlers": [
+        {
+          "name": "mpv",
+          "path": "/usr/bin/mpv"
+        }
+      ]
+    },
+    "application/zip": {
+      "action": 0,
+      "ask": true
+    },
+    "application/x-tar": {
+      "action": 0,
+      "ask": true
+    },
+    "application/x-7z-compressed": {
+      "action": 0,
+      "ask": true
+    },
+    "application/x-msdownload": {
+      "action": 0,
+      "ask": true
+    },
+    "text/plain": {
+      "action": 1,
+      "handlers": [
+        {
+          "name": "nvim",
+          "path": "/usr/bin/nvim"
+        }
+      ]
+    },
+    "text/markdown": {
+      "action": 1,
+      "handlers": [
+        {
+          "name": "nvim",
+          "path": "/usr/bin/nvim"
+        }
+      ]
+    }
+  },
+  "schemes": {
+    "mailto": {
+      "stubEntry": true,
+      "handlers": [
+        null,
+        {
+          "name": "Gmail",
+          "uriTemplate": "https://mail.google.com/mail/?extsrc=mailto&url=%s"
+        }
+      ]
+    },
+    "magnet": {
+      "action": 4,
+      "handlers": [
+        {
+          "name": "Transmission",
+          "path": "/usr/bin/transmission-gtk"
+        }
+      ]
+    },
+    "zoommtg": {
+      "action": 4
+    },
+    "slack": {
+      "action": 4
+    },
+    "claude": {
+      "action": 4
+    },
+    "spotify": {
+      "action": 4
+    },
+    "steam": {
+      "action": 4
+    }
+  },
+  "isDownloadsImprovementsAlreadyMigrated": false
+}
