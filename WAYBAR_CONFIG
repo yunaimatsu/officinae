@@ -12,7 +12,8 @@
         "bluetooth"
     ],
     "modules-center": [
-        "clock"
+        "clock",
+        "hyprland/workspaces"
     ],
     "modules-right": [
         "cpu",
@@ -55,6 +56,20 @@
     "clock": {
         "format": "{:%Y-%m-%d %a %H:%M:%S}",
         "interval": 1
+    },
+    "hyprland/workspaces": {
+        "format": "{name}: {windows}",
+        "format-window-separator": " ",
+        "window-rewrite-default": "◉",
+        "window-rewrite": {},
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
     },
 
     // Right: components
