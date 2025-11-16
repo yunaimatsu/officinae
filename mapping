@@ -4,3 +4,7 @@ FOOT.ini:$HOME/.config/foot/foot.ini
 WAYBAR_CONFIG:$HOME/.config/waybar/config
 WAYBAR_STYLE.css:$HOME/.config/waybar/style.css
 KEYD_DEFAULT.conf:/etc/keyd/default.conf
+QUTE_BROWSER_CONFIG.py:$HOME/.config/qutebrowser/config.py
+QUTE_BROWSER_CONFIG_TAB.py:$HOME/.config/qutebrowser/tab.py
+QUTE_BROWSER_CONFIG_STATUSBAR.py:$HOME/.config/qutebrowser/statusbar.py
+QUTE_BROWSER_CONFIG_COMPLETION.py:$HOME/.config/qutebrowser/completion.py
